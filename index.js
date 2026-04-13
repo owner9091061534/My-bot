@@ -14,6 +14,12 @@ client.on('messageCreate', (message) => {
     if (message.author.bot) return;
     if (message.content === '!ping') {
         message.reply('pong!');
+    } else if (message.content === '!hello') {
+        message.reply('Hello there!');
+    } else if (message.content === '!bye') {
+        message.reply('Goodbye!');
+    } else if (message.content === '!help') {
+        message.reply('Available commands: !ping, !hello, !bye, !help');
     }
 });
 
